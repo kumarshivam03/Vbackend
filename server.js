@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
   res.send("<h1>Hello Shivam Sumit</h1>");
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
   console.log(`Listening at PORT ${PORT}`.bgMagenta.white);

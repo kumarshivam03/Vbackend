@@ -26,4 +26,4 @@ jobs:
       - name: Pull Image from docker hub
         run: docker pull shivam3127/node-app:latest
       - name: Run Docker Container
-        run: docker run -d -p 8080:8080 --name nodejs-app-container -e MONGO_PASSWORD='${{secrets.MONGO_URL}}' shivam3127/node-app
+        run: docker run -d -p 8080:8080 --name nodejs-app-container -e MONGO_PASSWORD='${{secrets.MONGO_PASSWORD}}' shivam3127/node-app
